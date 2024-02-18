@@ -1,7 +1,13 @@
 import './bootstrap';
 
 import {createApp} from 'vue'
+import ExampleCounter from "./components/ExampleCounter.vue";
 
-import App from './App.vue'
+const app = createApp({
+    components: {
+        ExampleCounter,
+    }
+});
 
-createApp(App).mount('#app')
+app.mount('#app');
+
